@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+.game {
+	width: 11vw;
+	height: 11vw;
+	margin: 11px;
+	text-decoration: none;
+	border-radius: 20px
+}
+
+#fullscreen {
+	position: relative; 
+	right: -700px;
+	bottom: 130px;
+	height: 50px;
+	width: 50px;
+}
+#refresh {
+	position: relative; 
+	right: -575px;
+	bottom: 130px;
+	height: 50px;
+	width: 50px;
+}
+.game:hover {
+	transition: all .5s linear;
+	cursor: pointer;
+	animation: gmeglow 1.5s linear infinite alternate;
+}
+
+.game:hover p {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity .3s linear
+}
+.game:hover .gameborde {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity .3s linear
+}
+.scroll {
+	animation: scroll 5s linear infinite;
+}
+.gameborde {
+	 overflow: hidden;
+	opacity: 0;
+	background-color:rgba(0,0,0,0.5);
+	width: 10.85vw;
+	height: 2.9vw;
+	top: -45px;
+	border: 1px solid #00BEED;
+	border-bottom-left-radius: 14px;
+		border-bottom-right-radius: 14px;
+	position: relative;
+}
+.gamecontent {
+	position: relative
+}
+.bottom-info {
+	border: 1px double #00BEED;
+	display:block;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	width:801px;
+	height:100px;
+	background-color:#000;
+	margin:auto;
+	animation: gmeglow 1s ease-in-out infinite alternate;
+
+}
+.bottom-info h3 {
+	position: relative; 
+	font-size: 25px;
+	top: -40px;
+	left: 34px;
+	font-family: Poppins;
+	-webkit-text-stroke: 0.1px #00BEED;
+}
+.bottom-info h1 {
+	position: relative; 
+	left: 35px;
+	bottom: 15px;
+	font-family: Poppins;
+	-webkit-text-stroke: 0.1px #00BEED;
+}
+.gmeifram {
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+	margin: auto;
+	display: block;
+	border: 1px double #00BBED;
+	animation: gmeglow 1s ease-in-out infinite alternate
+}
+.gamecontent p {
+	position: absolute;
+	padding: 0;
+    font-family:
+	margin: 0;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	visibility: hidden;
+	opacity: 0;
+	font-weight: 700;
+	font-family: Poppins;
+	text-shadow: 0 0 15px #000000;
+    text-align: center;
+	color: #00BEED;
+	line-height: 0%;
+	width: 14vw;
+	font-size: 1.2vw
+}
+
+.gamecontent img {
+	height: 11vw;
+	width: 11vw;
+	border-radius: 15px;
+        box-shadow: 0 0 5px #000000;
+}
+
+.gamescontainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 10%;
+	width: 100%;
+}
+@keyframes gmeglow {
+  from {
+    box-shadow: 0 0 10px #00BEED;
+  }
+  to {
+    box-shadow: 0 0 30px #00BEED;
+  }
+}
+
+    @keyframes scroll {
+ 0%   { 
+ transform: translateX(40%); 		
+ }
+ 100% { 
+ transform: translateX(-140%); 
+ }
+}
+

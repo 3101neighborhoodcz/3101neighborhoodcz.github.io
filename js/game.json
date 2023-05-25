@@ -1,0 +1,147 @@
+{
+    "8BallPool": {
+"Iframe": "/games/8ball",
+"Title": "8 Ball Pool",
+"Author": "By Inlogic Games",
+"PageTitle": "Aqua Games - 8 Ball Pool"
+    },
+        "tunnelrush": {
+"Iframe": "/games/tunnelrush",
+"Title": "Tunnel Rush",
+"Author": "By Deer Cat",
+"PageTitle": "Aqua Games - Tunnel Rush"
+    },
+        "mc": {
+"Iframe": "/PrecisionClient-Static/",
+"Title": "Precision Client",
+"Author": "By etcherfx",
+"PageTitle": "Aqua Games - Precision Client"
+    },
+            "burritobison": {
+"Iframe": "/games/burritobison",
+"Title": "Burrito Bison",
+"Author": "By Juicy Beast",
+"PageTitle": "Aqua Games - Burrito Bison"
+    },
+           "jenga": {
+"Iframe": "/games/jenga",
+"Title": "Jenga",
+"Author": "By chandlerprall",
+"PageTitle": "Aqua Games - Jenga"
+    },
+               "quiz": {
+"Iframe": "/games/theimpossiblequiz",
+"Title": "The Impossible Quiz",
+"Author": "By Splapp-Me-Do",
+"PageTitle": "Aqua Games - The Impossible Quiz"
+    },
+                   "quiz2": {
+"Iframe": "/games/theimpossiblequiz2",
+"Title": "The Impossible Quiz 2",
+"Author": "By Splapp-Me-Do",
+"PageTitle": "Aqua Games - The Impossible Quiz 2"
+    },
+                       "backrooms": {
+"Iframe": "/games/backrooms",
+"Title": "Backrooms",
+"Author": "By Esyverse",
+"PageTitle": "Aqua Games - Backrooms"
+    },
+                           "paperio2": {
+"Iframe": "/games/paperio2",
+"Title": "Paper.io 2",
+"Author": "By Voodoo",
+"PageTitle": "Aqua Games - Paper.io 2"
+    },
+                       "warsim": {
+"Iframe": "/games/warsim",
+"Title": "Ages of Conflict",
+"Author": "By JoySpark Games",
+"PageTitle": "Aqua Games - Ages of Conflict"
+    },
+               "run1": {
+"Iframe": "/games/run1",
+"Title": "Run 1",
+"Author": "By Joseph Cloutier",
+"PageTitle": "Aqua Games - Jenga"
+    },
+               "run2": {
+"Iframe": "/games/run2",
+"Title": "Run 2",
+"Author": "By Joseph Cloutier",
+"PageTitle": "Aqua Games - Run 2"
+    },
+               "run3": {
+"Iframe": "/games/run3",
+"Title": "Run 3",
+"Author": "By Joseph Cloutier",
+"PageTitle": "Aqua Games - Run 3"
+    },
+    
+    "1": {
+"Iframe": "/games/1",
+"Title": "1",
+"Author": "By 3kh0",
+"PageTitle": "Aqua Games - 1"
+    },
+    "13": {
+"Iframe": "/games/13",
+"Title": "13",
+"Author": "By eliasku",
+"PageTitle": "Aqua Games - 13"
+    },
+    "ageofwar": {
+"Iframe": "/games/ageofwar",
+"Title": "Age of War",
+"Author": "By Louissi",
+"PageTitle": "Aqua Games - Age of War"
+    },
+    "alienhominid": {
+"Iframe": "/games/alienhominid",
+"Title": "Alien Hominid",
+"Author": "By The Behemoth",
+"PageTitle": "Aqua Game - Alien Hominid"
+    },
+    "badeggio": {
+"Iframe": "/games/badeggio",
+"Title": "BadEgg.io",
+"Author": "By Blue Wizard Digital",
+"PageTitle": "Aqua Game - BadEgg.io"
+    },
+    "chromedino": {
+"Iframe": "/games/chrome-dino",
+"Title": "Chrome Dino",
+"Author": "By Google",
+"PageTitle": "Aqua Game - Chrome Dino"
+    },
+    "edgesurf": {
+"Iframe": "/games/edge-surf",
+"Title": "Edge Surf",
+"Author": "By Microsoft",
+"PageTitle": "Aqua Game - Edge Surf"
+    },
+    "elasticman": {
+"Iframe": "/games/elasticman",
+"Title": "Elastic Man",
+"Author": "By David Li",
+"PageTitle": "Aqua Game - Elastic Man"
+    },
+    "getawayshootout": {
+"Iframe": "/games/getawayshootout",
+"Title": "Getaway Shootout",
+"Author": "By New Eich Games",
+"PageTitle": "Aqua Game - Getaway Shootout"
+    },
+    "interactivebuddy": {
+"Iframe": "/games/interactive-buddy",
+"Title": "Interactive Buddy",
+"Author": "By Shock-value",
+"PageTitle": "Aqua Game - Interactive Buddy"
+    },
+    "ngon": {
+"Iframe": "/games/ngon",
+"Title": "ngon",
+"Author": "By landgreen",
+"PageTitle": "Aqua Game - ngon"
+    }
+}

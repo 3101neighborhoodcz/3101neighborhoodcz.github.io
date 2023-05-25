@@ -1,0 +1,285 @@
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 4;
+}
+* {
+  cursor: url(https://aquagxmes.github.io/img/Normal.cur),auto;
+}
+#settings {
+	z-index: 10;
+    width: 700px; 
+    height: 400px; 
+    background-color: black; 
+    position: fixed; 
+    left: 24vw; 
+    border-radius: 20px; 
+    border: 2px solid #00BBED;
+}
+
+.SettingsTitle {
+ position: relative;
+    font-family: Consolas; 
+    text-align: center; 
+    color: #00BBED;
+}
+#CloakForm {
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid #00BBED;
+    color: #00BBED;
+   }
+#OrgTitleName {
+color: rgba(0,0,0,0);
+}
+   #settingToggle {
+    width: 50px;
+    float: left;
+    position: fixed;
+    bottom: 0.7vw;
+    left: 0.7vw;
+    border-radius: 50px;
+   }
+   #settingToggle:hover {
+    animation: glow 2s linear infinite alternate;
+   }
+   .CloakInput {
+    margin: 4px;
+    width: 80px;
+    border: 1px solid #00BBED;
+    background-color: black;
+    color: #00BBED;
+    border-radius: 20px;
+   } 
+.methodbttn {
+    font-family: Poppins;
+    border: 1px solid #00BEED;
+    color: #00BEED;
+	font-size: 15px;
+    background-color: #000000;
+    border-radius: 10px; 
+    height: 50px; 
+    width: 100px; 
+    position: relative; 
+    top: 25px;
+}
+.methodbttn:hover {
+    -webkit-animation: glow 5s linear infinite;
+  -moz-animation: glow 5s linear infinite;
+  animation: glow 5s linear infinite;
+}
+.methods {
+text-align: center;
+}
+ .newsdiv {
+  margin: auto;
+   height: 200px;
+   border: 1px solid #00BEED;
+	border-radius: 40px;
+    width: 800px;
+  }
+ .newsdiv:hover {
+    -webkit-animation: glow 5s linear infinite;
+  -moz-animation: glow 5s linear infinite;
+  animation: glow 5s linear infinite;
+  }
+.newslink {
+	text-decoration: none;
+}
+  .newsimg {
+ float: left;
+ height: 200px;
+ width: 200px;
+ border: 1px solid #00BEED;
+ border-bottom-left-radius: 40px;
+ border-top-left-radius: 40px;
+  }
+  .newstxt {
+  margin-left: 230px;
+  font-family: Poppins;
+  -webkit-text-stroke: 0.1px #00BBED;
+  }
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.aqua {
+  font-family: Poppins;
+ color: rgba(0,0,0,0);
+  -webkit-text-stroke: 0.1px #000000;
+  font-size: 70px;
+  text-align: center;
+}
+.aquasentence {
+  color: rgba(0,0,0,0);
+  font-family: Poppins;
+  -webkit-text-stroke: 0.4px #000000;
+  font-size: 26px;
+  text-align: center
+}
+#srchbar {
+border-radius: 15px;
+font-family: Poppins;
+text-align: center;
+border-color: #00BBED;
+color: white;
+width: 300px;
+height: 20px;
+  background-color: black;
+}
+#srchbar:focus {
+    outline: none !important;
+    border-color: #0093ba;
+    animation: glow 5s linear infinite;
+  }
+#particles-js {
+ z-index: -1;
+ top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("/img/aquabg.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+#closebttn{
+  position: absolute;
+  border-radius: 10px;
+  top: 60%;
+  left: 50%;
+  font-size: 25px;
+  color: black;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+ul {
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0px;
+ height: 100px;
+  width: 100%
+}
+
+li {
+  z-index: 3;
+  float: right;
+}
+
+li a {
+ position: relative;
+ top: 10px;
+  z-index: 3;
+ font-size: 20x;
+  font-family: Poppins;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+
+  z-index: 3;
+ background-color: rgba(0, 187, 237, 0.5);
+color: #000000;
+  border-radius: 10px;
+ transition: .5s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #00BBED; 
+  border-radius: 1000px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0081a3;
+  -webkit-animation: glow 5s linear infinite alternate;
+  -moz-animation: glow 5s linear infinite alternate;
+  animation: glow 5s linear infinite alternate;
+}
+.container {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgba(43, 43, 43, 0);
+    /* box-shadow: 0 0 50px 0 rgba(8, 146, 208, 0.7); */
+    z-index: 1;
+    overflow: show;
+}
+
+.active {
+ border: 2px #000000 solid;
+ background-color: rgba(0, 187, 237, 0.5);
+color: #000000;
+  border-radius: 10px;
+  height: 20%;
+  text-shadow: 0 0 10px #00BBED;
+}
+@keyframes glowactive {
+  from {
+    text-shadow: 0 0 10px #0062ff, 0 0 10px #0062ff, 0 0 10px #000000, 0 0 10px #000000, 
+                 0 0 10px #000000, 0 0 10px #1ba82b, 0 0 10px #1ba82b, 0 0 10px #0062ff, 0 0 10px #0062ff;
+  }
+  to {
+    text-shadow: 0 0 10px #1ba82b, 0 0 10px #1ba82b, 0 0 10px #000000, 0 0 10px #ff4da6, 
+                 0 0 10px #000000, 0 0 10px #0062ff, 0 0 10px #0062ff, 0 0 10px #0062ff, 0 0 10px #0062ff;
+  }
+}
+
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #0062ff, 0 0 10px #0062ff, 0 0 15px #000000, 0 0 20px #000000, 
+                 0 0 15px #000000, 0 0 10px #0062ff, 0 0 5px #0062ff;
+  }
+  to {
+    box-shadow:0 0 20px #0062ff, 0 0 15px #0062ff, 0 0 10px #000000, 0 0 5px #000000, 
+                 0 0 10px #000000, 0 0 15px #0062ff, 0 0 20px #0062ff;
+  }
+}
