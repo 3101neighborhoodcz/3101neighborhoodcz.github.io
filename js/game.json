@@ -1,9 +1,94 @@
-{
+  {
     "8BallPool": {
 "Iframe": "/games/8ball",
 "Title": "8 Ball Pool",
 "Author": "By Inlogic Games",
 "PageTitle": "Aqua Games - 8 Ball Pool"
+    },
+        "baldisbasics": {
+"Iframe": "/games/baldis-basics",
+"Title": "Baldi's Basics",
+"Author": "By Basically games",
+"PageTitle": "Aqua Games - Baldi's Basics"
+    },
+        "bitlife": {
+"Iframe": "/games/bitlife",
+"Title": "Bit Life",
+"Author": "By Candywriter",
+"PageTitle": "Aqua Games - Bitlife"
+    },
+        "clusterrush": {
+"Iframe": "/games/cluster-rush",
+"Title": "Cluster Rush",
+"Author": "By Unknown",
+"PageTitle": "Aqua Games - Cluster Rush"
+    },    "csgoclicker": {
+"Iframe": "/games/csgo-clicker",
+"Title": "CSGO Clicker",
+"Author": "By Malthe",
+"PageTitle": "Aqua Games - CSGO Clicker"
+    },    "deathrun3d": {
+"Iframe": "/games/death-run-3d",
+"Title": "Death Run 3D",
+"Author": "By kevin.wang",
+"PageTitle": "Aqua Games - Death Run 3D"
+    },    "drivemad": {
+"Iframe": "/games/drive-mad",
+"Title": "Drive Mad",
+"Author": "By Fancade",
+"PageTitle": "Aqua Games - Drive Mad"
+    },    "fnf": {
+"Iframe": "/games/friday-night-funkin",
+"Title": "Friday Night Funkin",
+"Author": "By ninja_muffin99",
+"PageTitle": "Aqua Games - FNF"
+    },    "monkeymart": {
+"Iframe": "/games/monkey-mart",
+"Title": "Monkey Mart",
+"Author": "By linklikebr",
+"PageTitle": "Aqua Games - Monkey Mart"
+    },
+    "motox3m": {
+"Iframe": "/games/moto-x3m",
+"Title": "Moto X3M",
+"Author": "By Ace Viral",
+"PageTitle": "Aqua Games - Moto X3M"
+    },
+    "slope": {
+"Iframe": "/games/slope",
+"Title": "Slope",
+"Author": "By Rob Kay",
+"PageTitle": "Aqua Games - Slope"
+    },
+        "stackball": {
+"Iframe": "/games/stack-ball",
+"Title": "Slope",
+"Author": "By Rob Kay",
+"PageTitle": "Aqua Games - Slope"
+    },
+        "stack": {
+"Iframe": "/games/stack",
+"Title": "Stack",
+"Author": "By Rob Kay",
+"PageTitle": "Aqua Games - Stack"
+    },
+        "templerun2": {
+"Iframe": "/games/temple-run-2",
+"Title": "Temple Run 2",
+"Author": "By Imangi Studios",
+"PageTitle": "Aqua Games - Temple Run 2"
+    },
+              "subwaysurfers": {
+"Iframe": "/games/subway-surfers",
+"Title": "Subway Surfers",
+"Author": "By SYBO Games",
+"PageTitle": "Aqua Games - Subway Surfers"
+    },
+                    "tombofthemask": {
+"Iframe": "/games/tomb-of-the-mask",
+"Title": "Tomb of the Mask",
+"Author": "By Happymagenta",
+"PageTitle": "Aqua Games - Tomb of the Mask
     },
         "tunnelrush": {
 "Iframe": "/games/tunnelrush",
@@ -12,10 +97,10 @@
 "PageTitle": "Aqua Games - Tunnel Rush"
     },
         "mc": {
-"Iframe": "/PrecisionClient-Static/",
-"Title": "Precision Client",
-"Author": "By etcherfx",
-"PageTitle": "Aqua Games - Precision Client"
+"Iframe": "/eaglercraft/",
+"Title": "Eaglercraft",
+"Author": "By LAX1DUDE",
+"PageTitle": "Aqua Games - Eaglercraft"
     },
             "burritobison": {
 "Iframe": "/games/burritobison",
