@@ -84,6 +84,7 @@ text-align: center;
    border: 1px solid #00BEED;
 	border-radius: 40px;
     width: 800px;
+	 background-color: #000000;
   }
  .newsdiv:hover {
     -webkit-animation: glow 5s linear infinite;
