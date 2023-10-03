@@ -5,6 +5,60 @@
 "Author": "By Inlogic Games",
 "PageTitle": "Aqua Games - 8 Ball Pool"
     },
+                    "basketbros": {
+"Iframe": "/3kh0/projects/basketbros-io/index.html",
+"Title": "Basketbros.io",
+"Author": "By Blue Wizard Digital",
+"PageTitle": "Aqua Games - Basketbros.io"
+    },
+    "tanks2": {
+"Iframe": "https://www.mathsisfun.com/games/a/tanks072/itanks.html",
+"Title": "Tanks 2",
+"Author": "By MathIsFun",
+"PageTitle": "Aqua Games - Tanks 2"
+    },
+        "tanukisunset": {
+"Iframe": "/3kh0/projects/tanuki-sunset/index.html",
+"Title": "Tanuki Sunset",
+"Author": "By Squid Squad",
+"PageTitle": "Aqua Games - Tanuki Sunset"
+    },
+            "gd": {
+"Iframe": "/3kh0/projects/geodash/index.html",
+"Title": "Geometry Dash",
+"Author": "By Griffpatch",
+"PageTitle": "Aqua Games - Geometry Dash"
+    },
+                            "boxingrandom": {
+"Iframe": "/3kh0/projects/boxing-random/index.html",
+"Title": "Boxing Random",
+"Author": "By New Eich Games",
+"PageTitle": "Aqua Games - Boxing Random"
+    },
+                  "stuntcars": {
+"Iframe": "/3kh0/projects/madalin-stunt-cars-3/index.html",
+"Title": "Madalin Stunt Cars 3",
+"Author": "By Madalin Games",
+"PageTitle": "Aqua Games - Madalin Stunt Cars 3"
+    },
+                        "basketrandom": {
+"Iframe": "/BasketRandom/",
+"Title": "Basket Random",
+"Author": "By New Eich Games",
+"PageTitle": "Aqua Games - Basket Random"
+    },
+                "soccerskills": {
+"Iframe": "/3kh0/projects/soccer-skills/index.html",
+"Title": "Soccer Skills: Euro Cup",
+"Author": "By Radical Play",
+"PageTitle": "Aqua Games - Soccer Skills: Euro Cup"
+    },
+            "btts": {
+"Iframe": "/3kh0/projects/btts/index.html",
+"Title": "Big Tower Tiny Square",
+"Author": "By Evil Objective",
+"PageTitle": "Aqua Games - Big Tower Tiny Square"
+    },
         "baldisbasics": {
 "Iframe": "/games/baldis-basics",
 "Title": "Baldi's Basics",
