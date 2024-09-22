@@ -11,7 +11,7 @@
   z-index: 4;
 }
 * {
-  cursor: url(https://aquagxmes.github.io/img/Normal.cur),auto;
+  cursor: url(/Normal.cur),auto;
 }
 #settings {
 	z-index: 10;
@@ -118,14 +118,14 @@ canvas {
 .aqua {
   font-family: Poppins;
  color: rgba(0,0,0,0);
-  -webkit-text-stroke: 0.1px #000000;
+  -webkit-text-stroke: 0.6px #000000;
   font-size: 70px;
   text-align: center;
 }
 .aquasentence {
   color: rgba(0,0,0,0);
   font-family: Poppins;
-  -webkit-text-stroke: 0.4px #000000;
+  -webkit-text-stroke: 0.8px #000000;
   font-size: 26px;
   text-align: center
 }
