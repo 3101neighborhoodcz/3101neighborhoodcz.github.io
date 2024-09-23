@@ -1,6 +1,6 @@
 @font-face {
-  font-family: CodecColdBold;
-  src: url(/js/codec.cold-trial-bold.ttf);
+  font-family: Antitgasto;
+  src: url(/js/antipasto.demibold.ttf);
   font-weight: bold;
 }
 #overlay {
@@ -12,13 +12,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
   z-index: 4;
 }
 html {
   height: 100%;
   overflow: hidden;
-   background: url(/img/celestialbg.png) no-repeat center center fixed; 
+   background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/celestialbg.png) no-repeat center center fixed; 
    -webkit-background-size: cover; 
    -moz-background-size: cover; 
    -o-background-size: cover; 
@@ -97,16 +97,14 @@ canvas {
 }
 .star {
     color: #6564BF;
-  -webkit-text-stroke: 0.5vw black;
-  font-family: CodecColdBold;
-  font-size: 7vw;
+  font-family: Poppins;
+  font-size: 70px;
   text-align: center;
 }
 .starsentence {
-  color: #6564BF;
-  -webkit-text-stroke: 0.5vw black;
-  font-family: CodecColdBold;
-  font-size: 3.5vw;
+  color: #a6a4ff;
+  font-family: Poppins;
+  font-size: 25px;
   text-align: center;
 }
 #srchbar {
@@ -154,7 +152,7 @@ ul {
   padding: 0;
   overflow: hidden;
   top: 0px;
-  height: 15%;
+  height: 10%;
   width: 100%;
 }
 
