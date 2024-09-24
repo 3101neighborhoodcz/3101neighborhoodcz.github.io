@@ -12,7 +12,7 @@ function createCircle(event) {
   circle.style.top = `${y - 50}px`;  // Center the circle on the click
 
   // Append the circle to the container
-  document.querySelector("body").appendChild(circle);
+  document.querySelector(".circleCont").appendChild(circle);
 
   // Remove the circle after the animation is done
   circle.addEventListener('animationend', () => {
