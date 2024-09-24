@@ -97,13 +97,13 @@ canvas {
 }
 .star {
   color: #6564BF;
-  font-family: Poppins;
+  font-family: Antitgasto;
   font-size: 70px;
   text-align: center;
 }
 .starsentence {
   color: #a6a4ff;
-  font-family: Poppins;
+  font-family: Antitgasto;
   font-size: 25px;
   text-align: center;
 }
@@ -356,9 +356,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120%; /* Make it stretch wider */
+  width: 240px; /* Make it stretch wider */
   height: 120%; /* Make it stretch taller */
-  background-color: rgba(0, 0, 0, 0.5); /* Circle color */
+  background-color: rgb(132 112 255 / 40%); /* Circle color */
   border-radius: 5vw; /* Smooth corners */
   transform: translate(-50%, -50%) scale(0); /* Center and hide */
   transition: transform 0.3s ease; /* Smooth transition */
@@ -373,7 +373,7 @@ body {
     display: flex;
     justify-content: center; /* Center buttons horizontally */
     align-items: center;
-    background-color: #333;
+    background-color: #07070799;
     height: 60px; /* Height of the navigation bar */
     position: fixed; /* Fix the navbar to the bottom */
     left: 0; /* Align to the left */
@@ -383,14 +383,14 @@ body {
 }
 
 .nav-button {
-    width: 50px;  /* Diameter of the button */
-    height: 50px; /* Diameter of the button */
+    width: 45px;  /* Diameter of the button */
+    height: 45px; /* Diameter of the button */
     border-radius: 50%; /* Makes the button circular */
     background-color: #a6a4ff; /* Button color */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px; /* Space between buttons */
+    margin: 0 10px; /* Space between buttons */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
