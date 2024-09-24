@@ -18,11 +18,13 @@
 html {
   height: 100%;
   overflow: hidden;
-   background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/celestialbg.png) no-repeat center center fixed; 
-   -webkit-background-size: cover; 
-   -moz-background-size: cover; 
-   -o-background-size: cover; 
-   background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/celestialbg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
 }
 * {
   cursor: url(/img/Normal.cur), auto;
@@ -96,7 +98,7 @@ canvas {
   vertical-align: bottom;
 }
 .star {
-    color: #6564BF;
+  color: #6564BF;
   font-family: Poppins;
   font-size: 70px;
   text-align: center;
@@ -144,43 +146,6 @@ canvas {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-ul {
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  top: 0px;
-  height: 10%;
-  width: 100%;
-}
-
-li {
-  z-index: 3;
-  float: right;
-}
-
-li a {
-  position: relative;
-  top: 10px;
-  z-index: 3;
-  font-size: 20x;
-  font-family: Poppins;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 5px 20px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  z-index: 3;
-  background-color: rgba(0, 187, 237, 0.5);
-  color: #000000;
-  border-radius: 10px;
-  transition: 0.5s;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -210,27 +175,6 @@ li a:hover:not(.active) {
   width: 100%; /* Keep as is */
   height: auto; /* Could set to a max-height if necessary */
   overflow: hidden; /* Prevent overflow */
-}
-
-.active {
-  border: 2px #000000 solid;
-  background-color: rgba(0, 187, 237, 0.5);
-  color: #000000;
-  border-radius: 10px;
-  height: 20%;
-  text-shadow: 0 0 10px #00bbed;
-}
-@keyframes glowactive {
-  from {
-    text-shadow: 0 0 10px #0062ff, 0 0 10px #0062ff, 0 0 10px #000000,
-      0 0 10px #000000, 0 0 10px #000000, 0 0 10px #1ba82b, 0 0 10px #1ba82b,
-      0 0 10px #0062ff, 0 0 10px #0062ff;
-  }
-  to {
-    text-shadow: 0 0 10px #1ba82b, 0 0 10px #1ba82b, 0 0 10px #000000,
-      0 0 10px #ff4da6, 0 0 10px #000000, 0 0 10px #0062ff, 0 0 10px #0062ff,
-      0 0 10px #0062ff, 0 0 10px #0062ff;
-  }
 }
 
 @keyframes glow {
@@ -384,4 +328,89 @@ span:nth-child(10){
   left:initial;
   animation-delay:2.75s ;
   animation-duration: 5.25s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-bottom: 70px; /* Space for the navbar */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 20px; /* Space from the top */
+}
+
+.logo {
+  position: relative;
+  z-index: 1; /* Ensure the logo is above the circle */
+  width: 200px; /* Adjust size as needed */
+}
+
+.hover-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%; /* Make it stretch wider */
+  height: 120%; /* Make it stretch taller */
+  background-color: rgba(0, 0, 0, 0.5); /* Circle color */
+  border-radius: 5vw; /* Smooth corners */
+  transform: translate(-50%, -50%) scale(0); /* Center and hide */
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 0; /* Below the logo */
+}
+
+.logo-container:hover .hover-circle {
+  transform: translate(-50%, -50%) scale(1); /* Show the stretched circle */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center;
+    background-color: #333;
+    height: 60px; /* Height of the navigation bar */
+    position: fixed; /* Fix the navbar to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Position at the bottom */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.nav-button {
+    width: 50px;  /* Diameter of the button */
+    height: 50px; /* Diameter of the button */
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #a6a4ff; /* Button color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button img {
+    width: 70%; /* Adjust size of the image */
+    height: 70%; /* Adjust size of the image */
+}
+
+.nav-button:hover {
+    background-color: #6564BF; /* Darker color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Optional: Add a focus style for accessibility */
+.nav-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00bedd;
 }
