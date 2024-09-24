@@ -3,6 +3,24 @@
   src: url(/js/antipasto.demibold.ttf);
   font-weight: bold;
 }
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(114, 108, 168, 0.7);
+  pointer-events: none; /* Prevents further clicks on the circle */
+  animation: expandFade 1.5s forwards;
+}
+
+@keyframes expandFade {
+  0% {
+      transform: scale(0);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(5);
+      opacity: 0;
+  }
+}
 #overlay {
   position: fixed;
   display: none;
