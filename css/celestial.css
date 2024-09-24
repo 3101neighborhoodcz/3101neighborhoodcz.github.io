@@ -357,6 +357,7 @@ body {
 }
 
 .logo-container {
+  
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -383,7 +384,7 @@ body {
   z-index: 0; /* Below the logo */
 }
 
-.logo-container:hover .hover-circle {
+.logo:hover .hover-circle {
   transform: translate(-50%, -50%) scale(1); /* Show the stretched circle */
 }
 
