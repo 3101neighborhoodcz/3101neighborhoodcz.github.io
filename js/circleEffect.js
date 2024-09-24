@@ -6,8 +6,8 @@ function createCircle(event) {
   const y = event.clientY;
 
   // Set the size and position of the circle
-  circle.style.width = '100px';  // Set a size for the circle
-  circle.style.height = '100px'; // Set a size for the circle
+  circle.style.width = '25px';  // Set a size for the circle
+  circle.style.height = '25px'; // Set a size for the circle
   circle.style.left = `${x - 50}px`; // Center the circle on the click
   circle.style.top = `${y - 50}px`;  // Center the circle on the click
 
