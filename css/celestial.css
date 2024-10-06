@@ -1,0 +1,438 @@
+@font-face {
+  font-family: Antitgasto;
+  src: url(/js/ubuntu.light.ttf);
+  font-weight: bold;,
+  font-family: AntitgastoB;
+  src: url(/js/ubuntu.medium.ttf);
+  font-weight: bold;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(114, 108, 168, 0.7);
+  pointer-events: none; /* Prevents further clicks on the circle */
+  animation: expandFade 1.5s forwards;
+}
+
+@keyframes expandFade {
+  0% {
+      transform: scale(0);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(5);
+      opacity: 0;
+  }
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 4;
+}
+html {
+  height: 100%;
+  background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/celestialbg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+}
+* {
+  cursor: url(/img/Normal.cur), auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.methodbttn {
+  box-sizing: border-box;
+  font-family: Poppins;
+  border: 1px solid #00beed;
+  color: #00beed;
+  font-size: 15px;
+  background-color: #000000;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  position: relative;
+  top: 25px;
+}
+
+.methodbttn:hover {
+  -webkit-animation: glow 5s linear infinite;
+  -moz-animation: glow 5s linear infinite;
+  animation: glow 5s linear infinite;
+}
+
+.methods {
+  text-align: center;
+}
+
+.newsdiv {
+    box-sizing: border-box;
+  margin: auto;
+  height: 200px;
+  border: 1px solid #00beed;
+  border-radius: 40px;
+  width: 800px;
+  background-color: #000000;
+}
+.newsdiv:hover {
+  -webkit-animation: glow 5s linear infinite;
+  -moz-animation: glow 5s linear infinite;
+  animation: glow 5s linear infinite;
+}
+.newslink {
+  text-decoration: none;
+}
+.newsimg {
+  float: left;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #00beed;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+.newstxt {
+  margin-left: 230px;
+  font-family: Poppins;
+  -webkit-text-stroke: 0.1px #00bbed;
+}
+body {
+  overscroll-behavior-y: none;
+  Overscroll-behavior-x: none;
+  height: 100%;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.star {
+  color: #6564BF;
+  font-family: Antitgasto;
+  font-size: 70px;
+  text-align: center;
+}
+.starsentence {
+  color: #a6a4ff;
+  font-family: AntitgastoB;
+  font-size: 25px;
+  text-align: center;
+}
+#srchbar {
+  font-size: 15px;
+  box-sizing: content-box;
+  margin: auto;
+  margin-top: 5%;
+  width: 350px;
+  border-radius: 50px;
+  height: 40px;
+  font-family: AntitgastoB;
+  text-align: center;
+  color: #9f9f9f;
+  background-color: #0000008c;
+}
+#srchbar:focus {
+  outline: none !important;
+  border-color: #ffffff;
+  background-color: #3232328c;
+  transition: all .25s ease-out;
+}
+#closebttn {
+  position: absolute;
+  border-radius: 10px;
+  top: 60%;
+  left: 50%;
+  font-size: 25px;
+  color: black;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #7852c4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(86, 82, 196, 0.5);
+  border-radius: 1000px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 95, 227, 0.5);
+  -webkit-animation: glow 5s linear infinite alternate;
+  -moz-animation: glow 5s linear infinite alternate;
+  animation: glow 5s linear infinite alternate;
+}
+.container {
+  position: relative; /* Change to relative */
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%; /* Keep as is */
+  height: auto; /* Could set to a max-height if necessary */
+  overflow: hidden; /* Prevent overflow */
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #0062ff, 0 0 10px #0062ff, 0 0 15px #000000,
+      0 0 20px #000000, 0 0 15px #000000, 0 0 10px #0062ff, 0 0 5px #0062ff;
+  }
+  to {
+    box-shadow: 0 0 20px #0062ff, 0 0 15px #0062ff, 0 0 10px #000000,
+      0 0 5px #000000, 0 0 10px #000000, 0 0 15px #0062ff, 0 0 20px #0062ff;
+  }
+}
+section{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background-position-x: center;
+  background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+@keyframes animateBg {
+  0%,100%
+  {
+      transform:scale(1);
+  }
+  50%
+  {
+      transform:scale(1);
+  }
+}
+span{
+  position: absolute;
+  z-index: -5;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: auto;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+  animation:  animate 3s linear infinite;
+}
+
+span::before{
+  border: solid double red;
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+  0%
+  {
+      transform: rotate(315deg) translateX(0);
+      opacity: 1;
+  }
+  70%
+  {
+      opacity: 1;
+
+  }
+  100%
+  {
+      transform: rotate(315deg) translateX(-1500px);
+      opacity: 0;
+
+  }
+  
+}
+span:nth-child(1){
+  top: 0;
+  right: 0;
+  left:initial;
+  animation-delay:0 ;
+  animation-duration: 3s;
+}
+
+span:nth-child(2){
+  top: 0;
+  right: 80px;
+  left:initial;
+  animation-delay:0.2s;
+  animation-duration: 4s;
+}
+
+span:nth-child(3){
+  top: 80px;
+  right: 0px;
+  left:initial;
+  animation-delay:0.4s ;
+  animation-duration: 5s;
+}
+
+span:nth-child(4){
+  top: 0;
+  right: 180px;
+  left:initial;
+  animation-delay:0.6s;
+  animation-duration: 5.5s;
+}
+
+span:nth-child(5){
+  top: 0;
+  right: 400px;
+  left:initial;
+  animation-delay:0.8s;
+  animation-duration: 2.5s;
+}
+
+span:nth-child(6){
+  top: 0;
+  right: 600px;
+  left:initial;
+  animation-delay:1s ;
+  animation-duration: 6s;
+}
+span:nth-child(7 ){
+  top: 300px;
+  right: 0px;
+  left:initial;
+  animation-delay:1s ;
+  animation-duration: 3.5s;
+}
+
+span:nth-child(8){
+  top: 0px;
+  right: 700px;
+  left:initial;
+  animation-delay:1.4s ;
+  animation-duration: 6.25s;
+}
+
+span:nth-child(9){
+  top: 0px;
+  right: 1000px;
+  left:initial;
+  animation-delay:0.75s ;
+  animation-duration: 4.25s;
+}
+
+span:nth-child(10){
+  top: 0px;
+  right: 1000px;
+  left:initial;
+  animation-delay:2.75s ;
+  animation-duration: 5.25s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 70px; /* Space for the navbar */
+}
+
+.logo-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 20px; /* Space from the top */
+}
+
+.logo {
+  position: relative;
+  z-index: 1; /* Ensure the logo is above the circle */
+  width: 200px; /* Adjust size as needed */
+}
+
+.hover-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px; /* Make it stretch wider */
+  height: 120%; /* Make it stretch taller */
+  background-color: rgb(132 112 255 / 40%); /* Circle color */
+  border-radius: 5vw; /* Smooth corners */
+  transform: translate(-50%, -50%) scale(0); /* Center and hide */
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 0; /* Below the logo */
+}
+
+.logo:hover .hover-circle {
+  transform: translate(-50%, -50%) scale(1); /* Show the stretched circle */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center;
+    background-color: #0000009c;
+    height: 60px; /* Height of the navigation bar */
+    position: fixed; /* Fix the navbar to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Position at the bottom */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.nav-button {
+    width: 45px;  /* Diameter of the button */
+    height: 45px; /* Diameter of the button */
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #a6a4ff; /* Button color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button img {
+    width: 70%; /* Adjust size of the image */
+    height: 70%; /* Adjust size of the image */
+}
+
+.nav-button:hover {
+    background-color: #6564BF; /* Darker color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Optional: Add a focus style for accessibility */
+.nav-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00bedd;
+}

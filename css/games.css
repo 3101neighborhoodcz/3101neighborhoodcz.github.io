@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Antitgasto;
+  src: url(/js/ubuntu.light.ttf);
+  font-weight: bold;,
+  font-family: AntitgastoB;
+  src: url(/js/ubuntu.medium.ttf);
+  font-weight: bold;
+}
+.game {
+	width: 11vw;
+	height: 11vw;
+	margin: 11px;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+#fullscreen {
+	position: relative; 
+	right: -700px;
+	bottom: 130px;
+	height: 50px;
+	width: 50px;
+}
+#refresh {
+	position: relative; 
+	right: -575px;
+	bottom: 130px;
+	height: 50px;
+	width: 50px;
+}
+.game:hover {
+	transition: all .5s linear;
+	cursor: pointer;
+	animation: glow 2s ease-in-out infinite alternate;
+}
+
+.game:hover p {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity .3s linear
+}
+.game:hover .gameborde {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity .3s linear
+}
+.scroll {
+	animation: scroll 5s linear infinite;
+}
+.gameborde {
+	overflow: hidden;
+	opacity: 0;
+	background-color:rgba(0,0,0,0.5);
+	width: 100%;
+	height: 25%;
+    margin-top: -25%;
+	border: 1px solid #cabbff;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+	position: relative;
+}
+.gamecontent {
+	position: relative
+}
+.bottom-info {
+	border: 1px double #cabbff;
+	display:block;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	width:801px;
+	height:100px;
+	background-color:#000;
+	margin:auto;
+	animation: gmeglow 1s ease-in-out infinite alternate;
+
+}
+.bottom-info h3 {
+	position: relative; 
+	font-size: 25px;
+	top: -40px;
+	left: 34px;
+	font-family: Antitgasto;
+	-webkit-text-stroke: 0.1px #cabbff;
+}
+.bottom-info h1 {
+	position: relative; 
+	left: 35px;
+	bottom: 15px;
+	font-family: Antitgasto;
+	-webkit-text-stroke: 0.1px #cabbff;
+}
+.gmeifram {
+	margin: auto;
+	display: block;
+	border: 1px double #cabbff;
+	animation: gmeglow 1s ease-in-out infinite alternate
+}
+.gamecontent p {
+	position: relative;
+	padding: 0;
+	margin: 0;
+
+    text-align: center;
+	color: #cabbff;
+	line-height: 0%;
+	top: 45%;
+	font-size: 1.5vh;
+}
+
+.gamecontent img {
+	height: 11vw;
+	width: 11vw;
+	border-radius: 15px;
+        box-shadow: 0 0 5px #000000;
+}
+
+.gamescontainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 10%;
+	width: 100%;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #6650e8;
+  }
+  to {
+    box-shadow: 0 0 30px #cabbff;
+  }
+}
+
+    @keyframes scroll {
+ 0%   { 
+ transform: translateX(40%); 		
+ }
+ 100% { 
+ transform: translateX(-140%); 
+ }
+}
+
