@@ -1,6 +1,13 @@
 @font-face {
   font-family: Antitgasto;
+<<<<<<< HEAD
   src: url(/js/antipasto.demibold.ttf);
+=======
+  src: url(/js/ubuntu.light.ttf);
+  font-weight: bold;,
+  font-family: AntitgastoB;
+  src: url(/js/ubuntu.medium.ttf);
+>>>>>>> tmp
   font-weight: bold;
 }
 .circle {
@@ -103,6 +110,11 @@ html {
   -webkit-text-stroke: 0.1px #00bbed;
 }
 body {
+<<<<<<< HEAD
+=======
+  overscroll-behavior-y: none;
+  Overscroll-behavior-x: none;
+>>>>>>> tmp
   height: 100%;
   margin: 0;
 }
@@ -119,11 +131,16 @@ canvas {
 }
 .starsentence {
   color: #a6a4ff;
+<<<<<<< HEAD
   font-family: Antitgasto;
+=======
+  font-family: AntitgastoB;
+>>>>>>> tmp
   font-size: 25px;
   text-align: center;
 }
 #srchbar {
+<<<<<<< HEAD
   box-sizing: border-box;
   border-radius: 15px;
   font-family: Poppins;
@@ -138,6 +155,25 @@ canvas {
   outline: none !important;
   border-color: #0093ba;
   animation: glow 5s linear infinite;
+=======
+  font-size: 15px;
+  box-sizing: content-box;
+  margin: auto;
+  margin-top: 5%;
+  width: 350px;
+  border-radius: 50px;
+  height: 40px;
+  font-family: AntitgastoB;
+  text-align: center;
+  color: #9f9f9f;
+  background-color: #0000008c;
+}
+#srchbar:focus {
+  outline: none !important;
+  border-color: #ffffff;
+  background-color: #3232328c;
+  transition: all .25s ease-out;
+>>>>>>> tmp
 }
 #closebttn {
   position: absolute;
@@ -166,16 +202,28 @@ canvas {
 }
 
 ::-webkit-scrollbar-track {
+<<<<<<< HEAD
   background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #00bbed;
+=======
+  background: #7852c4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(86, 82, 196, 0.5);
+>>>>>>> tmp
   border-radius: 1000px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
+<<<<<<< HEAD
   background: #0081a3;
+=======
+  background: rgba(100, 95, 227, 0.5);
+>>>>>>> tmp
   -webkit-animation: glow 5s linear infinite alternate;
   -moz-animation: glow 5s linear infinite alternate;
   animation: glow 5s linear infinite alternate;
@@ -236,6 +284,10 @@ span{
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
   animation:  animate 3s linear infinite;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> tmp
 span::before{
   border: solid double red;
   content: '';
@@ -390,7 +442,11 @@ body {
     display: flex;
     justify-content: center; /* Center buttons horizontally */
     align-items: center;
+<<<<<<< HEAD
     background-color: #07070799;
+=======
+    background-color: #0000009c;
+>>>>>>> tmp
     height: 60px; /* Height of the navigation bar */
     position: fixed; /* Fix the navbar to the bottom */
     left: 0; /* Align to the left */

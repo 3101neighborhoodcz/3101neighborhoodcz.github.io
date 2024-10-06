@@ -1,10 +1,25 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+=======
+@font-face {
+  font-family: Antitgasto;
+  src: url(/js/ubuntu.light.ttf);
+  font-weight: bold;,
+  font-family: AntitgastoB;
+  src: url(/js/ubuntu.medium.ttf);
+  font-weight: bold;
+}
+>>>>>>> tmp
 .game {
 	width: 11vw;
 	height: 11vw;
 	margin: 11px;
 	text-decoration: none;
+<<<<<<< HEAD
 	border-radius: 20px
+=======
+	border-radius: 20px;
+>>>>>>> tmp
 }
 
 #fullscreen {
@@ -24,7 +39,11 @@
 .game:hover {
 	transition: all .5s linear;
 	cursor: pointer;
+<<<<<<< HEAD
 	animation: gmeglow 1.5s linear infinite alternate;
+=======
+	animation: glow 2s ease-in-out infinite alternate;
+>>>>>>> tmp
 }
 
 .game:hover p {
@@ -41,6 +60,7 @@
 	animation: scroll 5s linear infinite;
 }
 .gameborde {
+<<<<<<< HEAD
 	 overflow: hidden;
 	opacity: 0;
 	background-color:rgba(0,0,0,0.5);
@@ -50,13 +70,28 @@
 	border: 1px solid #00BEED;
 	border-bottom-left-radius: 14px;
 		border-bottom-right-radius: 14px;
+=======
+	overflow: hidden;
+	opacity: 0;
+	background-color:rgba(0,0,0,0.5);
+	width: 100%;
+	height: 25%;
+    margin-top: -25%;
+	border: 1px solid #cabbff;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+>>>>>>> tmp
 	position: relative;
 }
 .gamecontent {
 	position: relative
 }
 .bottom-info {
+<<<<<<< HEAD
 	border: 1px double #00BEED;
+=======
+	border: 1px double #cabbff;
+>>>>>>> tmp
 	display:block;
 	border-bottom-right-radius: 40px;
 	border-bottom-left-radius: 40px;
@@ -72,19 +107,30 @@
 	font-size: 25px;
 	top: -40px;
 	left: 34px;
+<<<<<<< HEAD
 	font-family: Poppins;
 	-webkit-text-stroke: 0.1px #00BEED;
+=======
+	font-family: Antitgasto;
+	-webkit-text-stroke: 0.1px #cabbff;
+>>>>>>> tmp
 }
 .bottom-info h1 {
 	position: relative; 
 	left: 35px;
 	bottom: 15px;
+<<<<<<< HEAD
 	font-family: Poppins;
 	-webkit-text-stroke: 0.1px #00BEED;
+=======
+	font-family: Antitgasto;
+	-webkit-text-stroke: 0.1px #cabbff;
+>>>>>>> tmp
 }
 .gmeifram {
 	margin: auto;
 	display: block;
+<<<<<<< HEAD
 	border: 1px double #00BBED;
 	animation: gmeglow 1s ease-in-out infinite alternate
 }
@@ -106,6 +152,21 @@
 	line-height: 0%;
 	width: 14vw;
 	font-size: 1.2vw
+=======
+	border: 1px double #cabbff;
+	animation: gmeglow 1s ease-in-out infinite alternate
+}
+.gamecontent p {
+	position: relative;
+	padding: 0;
+	margin: 0;
+
+    text-align: center;
+	color: #cabbff;
+	line-height: 0%;
+	top: 45%;
+	font-size: 1.5vh;
+>>>>>>> tmp
 }
 
 .gamecontent img {
@@ -124,12 +185,21 @@
 	flex-basis: 10%;
 	width: 100%;
 }
+<<<<<<< HEAD
 @keyframes gmeglow {
   from {
     box-shadow: 0 0 10px #00BEED;
   }
   to {
     box-shadow: 0 0 30px #00BEED;
+=======
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #6650e8;
+  }
+  to {
+    box-shadow: 0 0 30px #cabbff;
+>>>>>>> tmp
   }
 }
 
