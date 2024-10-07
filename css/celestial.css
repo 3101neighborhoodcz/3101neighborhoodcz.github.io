@@ -1,14 +1,14 @@
 @font-face {
   font-family: codecRegular;
-  src: url(/js/Codec-Cold-Regular-trail.ttf);
+  src: url(/js/Codec-Cold-Regular-trial.ttf);
 }
 @font-face {
   font-family: codecNews;
-  src: url(/js/Codec-Cold-News-trail.ttf);
+  src: url(/js/Codec-Cold-News-trial.ttf);
 }
 @font-face {
   font-family: codecThin;
-  src: url(/js/Codec-Cold-Thin-trail.ttf);
+  src: url(/js/Codec-Cold-Thin-trial.ttf);
 }
 @font-face {
   font-family: codecBold;
@@ -72,12 +72,14 @@ body {
   margin: 0;
 }
 .star {
-  color: #6564BF;
+  color: #a6a6a6d1;
+  -webkit-text-stroke: 1px #fff;
   font-family: codecBold;
   text-align: center;
 }
 .starsentence {
-  color: #a6a4ff;
+  color: #9f9f9fd1;
+  -webkit-text-stroke: 1px #fff;
   font-family: codecRegular;
   font-size: 25px;
   text-align: center;
@@ -145,12 +147,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(86, 82, 196, 0.5);
+  background: rgb(201, 201, 201);
   border-radius: 1000px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 95, 227, 0.5);
+  background: rgb(255, 255, 255);
 }
 .container {
   position: relative; /* Change to relative */
@@ -366,7 +368,7 @@ body {
     width: 45px;  /* Diameter of the button */
     height: 45px; /* Diameter of the button */
     border-radius: 50%; /* Makes the button circular */
-    background-color: #a6a4ff; /* Button color */
+    background-color: #b6b6b6; /* Button color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,7 +383,7 @@ body {
 }
 
 .nav-button:hover {
-    background-color: #6564BF; /* Darker color on hover */
+    background-color: #b8b8b8; /* Darker color on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
