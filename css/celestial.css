@@ -1,8 +1,22 @@
 @font-face {
-  font-family: Antitgasto;
-  src: url(/js/ubuntu.light.ttf);,
-  font-family: AntitgastoB;
-  src: url(/js/ubuntu.medium.ttf);
+  font-family: codecRegular;
+  src: url(/js/Codec-Cold-Regular-trail.ttf);
+}
+@font-face {
+  font-family: codecNews;
+  src: url(/js/Codec-Cold-News-trail.ttf);
+}
+@font-face {
+  font-family: codecThin;
+  src: url(/js/Codec-Cold-Thin-trail.ttf);
+}
+@font-face {
+  font-family: codecBold;
+  src: url(/js/codec.cold.trial-bold.ttf);
+}
+@font-face {
+  font-family: codecExtBold;
+  src: url(/js/codec.cold.trial-extrabold.ttf);
 }
 .circle {
   position: absolute;
@@ -34,6 +48,7 @@
   background-color: rgba(0, 0, 0, 1);
   z-index: 4;
 }
+
 html {
   height: 100%;
   background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/celestialbg.png) no-repeat center center fixed; 
@@ -42,6 +57,7 @@ html {
   -o-background-size: cover; 
   background-size: cover;
 }
+
 * {
   cursor: url(/img/Normal.cur), auto;
   margin: 0;
@@ -49,80 +65,20 @@ html {
   box-sizing: border-box;
 }
 
-.methodbttn {
-  box-sizing: border-box;
-  font-family: Poppins;
-  border: 1px solid #00beed;
-  color: #00beed;
-  font-size: 15px;
-  background-color: #000000;
-  border-radius: 10px;
-  height: 50px;
-  width: 100px;
-  position: relative;
-  top: 25px;
-}
-
-.methodbttn:hover {
-  -webkit-animation: glow 5s linear infinite;
-  -moz-animation: glow 5s linear infinite;
-  animation: glow 5s linear infinite;
-}
-
-.methods {
-  text-align: center;
-}
-
-.newsdiv {
-    box-sizing: border-box;
-  margin: auto;
-  height: 200px;
-  border: 1px solid #00beed;
-  border-radius: 40px;
-  width: 800px;
-  background-color: #000000;
-}
-.newsdiv:hover {
-  -webkit-animation: glow 5s linear infinite;
-  -moz-animation: glow 5s linear infinite;
-  animation: glow 5s linear infinite;
-}
-.newslink {
-  text-decoration: none;
-}
-.newsimg {
-  float: left;
-  height: 200px;
-  width: 200px;
-  border: 1px solid #00beed;
-  border-bottom-left-radius: 40px;
-  border-top-left-radius: 40px;
-}
-.newstxt {
-  margin-left: 230px;
-  font-family: Poppins;
-  -webkit-text-stroke: 0.1px #00bbed;
-}
 body {
   overscroll-behavior-y: none;
   Overscroll-behavior-x: none;
   height: 100%;
   margin: 0;
 }
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
 .star {
   color: #6564BF;
-  font-family: Antitgasto;
-  font-size: 70px;
+  font-family: codecBold;
   text-align: center;
 }
 .starsentence {
   color: #a6a4ff;
-  font-family: Antitgasto;
+  font-family: codecRegular;
   font-size: 25px;
   text-align: center;
 }
@@ -137,7 +93,7 @@ canvas {
   width: 350px;
   border-radius: 50px;
   height: 40px;
-  font-family: AntitgastoB;
+  font-family: codecExtBold;
   text-align: center;
   color: #9f9f9f;
 }
@@ -153,7 +109,7 @@ canvas {
   width: 350px;
   border-radius: 50px;
   height: 40px;
-  font-family: AntitgastoB;
+  font-family: codecExtBold;
   text-align: center;
   color: #9f9f9f;
   background-color: #0000008c;
@@ -247,9 +203,9 @@ span{
   left: 50%;
   width: 4px;
   height: auto;
-  background: #fff;
+  background: hwb(209 74% 0%);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+  box-shadow: 0 0 0 4px rgba(169, 225, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
   animation:  animate 3s linear infinite;
 }
 span::before{
@@ -371,12 +327,16 @@ body {
 }
 
 .logo-container {
-  
   display: flex;
   justify-content: center;
   align-items: flex-start;
   position: relative;
   margin-top: 20px; /* Space from the top */
+}
+
+.logo-container:hover {
+ width: 225px;
+ transition: all .25s ease-in-out;
 }
 
 .logo {
@@ -385,20 +345,7 @@ body {
   width: 200px; /* Adjust size as needed */
 }
 
-.hover-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 240px; /* Make it stretch wider */
-  height: 120%; /* Make it stretch taller */
-  background-color: rgb(132 112 255 / 40%); /* Circle color */
-  border-radius: 5vw; /* Smooth corners */
-  transform: translate(-50%, -50%) scale(0); /* Center and hide */
-  transition: transform 0.3s ease; /* Smooth transition */
-  z-index: 0; /* Below the logo */
-}
-
-.logo:hover .hover-circle {
+.logo:hover {
   transform: translate(-50%, -50%) scale(1); /* Show the stretched circle */
 }
 
