@@ -12,11 +12,11 @@
 }
 @font-face {
   font-family: codecBold;
-  src: url(/js/codec.cold.trial-bold.ttf);
+  src: url(/js/codec.cold-trial-bold.ttf);
 }
 @font-face {
   font-family: codecExtBold;
-  src: url(/js/codec.cold.trial-extrabold.ttf);
+  src: url(/js/codec.cold-trial-extrabold.ttf);
 }
 .circle {
   position: absolute;
@@ -73,13 +73,13 @@ body {
 }
 .star {
   color: #a6a6a6d1;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 0.1px #fff;
   font-family: codecBold;
   text-align: center;
 }
 .starsentence {
   color: #9f9f9fd1;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 0.01px #fff;
   font-family: codecRegular;
   font-size: 25px;
   text-align: center;

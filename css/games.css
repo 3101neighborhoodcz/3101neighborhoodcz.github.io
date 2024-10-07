@@ -1,12 +1,25 @@
 @font-face {
-  font-family: Antitgasto;
-  src: url(/js/ubuntu.light.ttf);
-  font-weight: bold;,
-  font-family: AntitgastoB;
-  src: url(/js/ubuntu.medium.ttf);
-  font-weight: bold;
-}
+	font-family: codecRegular;
+	src: url(/js/Codec-Cold-Regular-trial.ttf);
+  }
+  @font-face {
+	font-family: codecNews;
+	src: url(/js/Codec-Cold-News-trial.ttf);
+  }
+  @font-face {
+	font-family: codecThin;
+	src: url(/js/Codec-Cold-Thin-trial.ttf);
+  }
+  @font-face {
+	font-family: codecBold;
+	src: url(/js/codec.cold-trial-bold.ttf);
+  }
+  @font-face {
+	font-family: codecExtBold;
+	src: url(/js/codec.cold-trial-extrabold.ttf);
+  }
 .game {
+	font-family: codecBold;
 	width: 11vw;
 	height: 11vw;
 	margin: 11px;
@@ -79,14 +92,14 @@
 	font-size: 25px;
 	top: -40px;
 	left: 34px;
-	font-family: Antitgasto;
+	font-family: codecExtBold;
 	-webkit-text-stroke: 0.1px #cabbff;
 }
 .bottom-info h1 {
 	position: relative; 
 	left: 35px;
 	bottom: 15px;
-	font-family: Antitgasto;
+	font-family: codecRegular;
 	-webkit-text-stroke: 0.1px #cabbff;
 }
 .gmeifram {
@@ -129,11 +142,10 @@
   }
   to {
     box-shadow: 0 0 30px #cabbff;
->>>>>>> tmp
   }
 }
 
-    @keyframes scroll {
+@keyframes scroll {
  0%   { 
  transform: translateX(40%); 		
  }
