@@ -95,7 +95,7 @@ body {
   width: 350px;
   border-radius: 50px;
   height: 40px;
-  font-family: codecExtBold;
+  font-family: codecThin;
   text-align: center;
   color: #9f9f9f;
 }
@@ -111,7 +111,7 @@ body {
   width: 350px;
   border-radius: 50px;
   height: 40px;
-  font-family: codecExtBold;
+  font-family: codecNews;
   text-align: center;
   color: #9f9f9f;
   background-color: #0000008c;
@@ -336,19 +336,15 @@ body {
   margin-top: 20px; /* Space from the top */
 }
 
-.logo-container:hover {
- width: 225px;
- transition: all .25s ease-in-out;
-}
-
 .logo {
   position: relative;
   z-index: 1; /* Ensure the logo is above the circle */
   width: 200px; /* Adjust size as needed */
+   transition: all .1s ease-in;
 }
 
 .logo:hover {
-  transform: translate(-50%, -50%) scale(1); /* Show the stretched circle */
+transform: scale(1.2);
 }
 
 .navbar {
