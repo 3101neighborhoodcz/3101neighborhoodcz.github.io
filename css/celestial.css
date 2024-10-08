@@ -72,19 +72,21 @@ body {
   margin: 0;
 }
 .star {
+  font-size: 50px;
   color: #a6a6a6d1;
-  -webkit-text-stroke: 0.1px #fff;
+  -webkit-text-stroke: 0.1vw #fff;
   font-family: codecBold;
   text-align: center;
 }
 .starsentence {
   color: #9f9f9fd1;
-  -webkit-text-stroke: 0.01px #fff;
+  -webkit-text-stroke: 0.01vw #fff;
   font-family: codecRegular;
   font-size: 25px;
   text-align: center;
 }
 #srchbar {
+  margin-bottom: 5%;
   outline: none !important;
   border-color: #ffffff;
   background-color: #3232328c;
