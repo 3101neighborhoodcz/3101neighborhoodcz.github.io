@@ -18,17 +18,28 @@
 	font-family: codecExtBold;
 	src: url(/js/codec.cold-trial-extrabold.ttf);
   }
-  @font-face {
-	font-family: antipasto;
-	src: url(/js/antipasto.demibold.ttf);
-  }
 .game {
-	font-family: antipasto;
+	font-family: Poppins;
 	width: 11vw;
 	height: 11vw;
 	margin: 11px;
 	text-decoration: none;
-	border-radius: 20px;
+	border-radius: 2vw;
+}
+
+#fullscreen {
+	position: relative; 
+	right: -700px;
+	bottom: 130px;
+	height: 50px;
+	width: 50px;
+}
+#refresh {
+	position: relative; 
+	right: -575px;
+	bottom: 130px;
+	height: 50px;
+	width: 50px;
 }
 
 .game:hover {
@@ -58,9 +69,10 @@
 	height: 25%;
     margin-top: -25%;
 	border: 1px solid #cabbff;
-	border-bottom-left-radius: 14px;
-	border-bottom-right-radius: 14px;
+	border-bottom-left-radius: 2vw;
+	border-bottom-right-radius: 2vw;
 	position: relative;
+	font-family: Poppins;
 }
 .gamecontent {
 	position: relative
@@ -75,24 +87,24 @@
 	background-color:#000;
 	margin:auto;
 	animation: gmeglow 1s ease-in-out infinite alternate;
-
 }
+
 .bottom-info h3 {
 	position: relative; 
 	font-size: 25px;
 	top: -40px;
 	left: 34px;
-	font-family: codecExtBold;
+	font-family: Poppins;
 	-webkit-text-stroke: 0.1px #cabbff;
 }
 .bottom-info h1 {
 	position: relative; 
 	left: 35px;
 	bottom: 15px;
-	font-family: codecRegular;
+	font-family: Poppins;
 	-webkit-text-stroke: 0.1px #cabbff;
 }
-.gmeifram {
+.gameIFrame {
 	margin: auto;
 	display: block;
 	border: 1px double #cabbff;
@@ -100,6 +112,7 @@
 }
 .gamecontent p {
 	position: relative;
+	font-family: Poppins;
 	padding: 0;
 	margin: 0;
     text-align: center;
@@ -112,7 +125,7 @@
 .gamecontent img {
 	height: 11vw;
 	width: 11vw;
-	border-radius: 5vw;
+	border-radius: 2vw;
     box-shadow: 0 0 5px #000000;
 }
 
@@ -124,7 +137,6 @@
 	flex-wrap: wrap;
 	flex-basis: 10%;
 	width: 100%;
-	margin-bottom: 10%;
 }
 
 @keyframes glow {

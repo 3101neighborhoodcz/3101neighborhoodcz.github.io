@@ -58,6 +58,10 @@ html {
   background-size: cover;
 }
 
+#filler {
+  height: 1%;
+}
+
 * {
   cursor: url(/img/Normal.cur), auto;
   margin: 0;
@@ -86,13 +90,12 @@ body {
   text-align: center;
 }
 #srchbar {
-  margin-bottom: 5%;
   outline: none !important;
   border-color: #ffffff;
   background-color: #3232328c;
   font-size: 15px;
   box-sizing: content-box;
-  margin: auto;
+  margin-bottom: 3%;
   margin-top: 5%;
   width: 350px;
   border-radius: 50px;
