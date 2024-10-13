@@ -22,5 +22,5 @@ window.addEventListener('DOMContentLoaded',async()=>{
         }
  })
  function refreshGame() {
-  document.getElementById('aquagame').src = gms[gamePage].Iframe
+  document.getElementById('stargame').src = gms[gamePage].Iframe
 }
