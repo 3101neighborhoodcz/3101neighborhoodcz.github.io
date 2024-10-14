@@ -29,15 +29,12 @@
 
 #fullscreen {
 	position: relative; 
-	right: -700px;
-	bottom: 130px;
 	height: 50px;
 	width: 50px;
 }
 #refresh {
+	margin-right: 5px;
 	position: relative; 
-	right: -575px;
-	bottom: 130px;
 	height: 50px;
 	width: 50px;
 }
@@ -89,18 +86,24 @@
 	animation: gmeglow 1s ease-in-out infinite alternate;
 }
 
+#buttons {
+	position: relative;
+	bottom: 60px;
+	left: 670px;
+	width: 150px;
+}
 .bottom-info h3 {
+	bottom: 5px;
+	left: 20px;
 	position: relative; 
 	font-size: 25px;
-	top: -40px;
-	left: 34px;
 	font-family: Poppins;
 	-webkit-text-stroke: 0.1px #cabbff;
 }
 .bottom-info h1 {
+	top: 5px;
+	left: 20px;
 	position: relative; 
-	left: 35px;
-	bottom: 15px;
 	font-family: Poppins;
 	-webkit-text-stroke: 0.1px #cabbff;
 }
