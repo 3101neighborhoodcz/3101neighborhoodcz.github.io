@@ -20,22 +20,24 @@
 <div class="bottom-info">
   <h1 id="GameTitle"></h1>
   <h3 id="GameAuthor" style="right:133px;"></h3>
-  <input id="fullscreen" type="image" src="/img/fullscreen.png" onclick="openFullscreen('stargame')">
-  <input id="refresh" type="image" src="/img/refresh.png" onclick="refreshGame()">
+  <div id="buttons">
+    <input id="refresh" type="image" src="/img/refresh.png" onclick="refreshGame()">
+    <input id="fullscreen" type="image" src="/img/fullscreen.png" onclick="openFullscreen('stargame')">
+  </div>
 </div>
 
 <div class="navbar">
-  <div class="nav-button" id="home-btn" onclick="window.location.href='/betahomepage'">
-      <img src="/img/home.png" alt="Home">
+  <div class="nav-button" id="home-btn" onclick="window.location.href='/index.html'"> 
+    <img src="/img/home.png" alt="Home">
   </div>
-  <div class="nav-button" id="games-btn" onclick="window.location.href='/pages/betagames'">
-      <img src="/img/games.png" alt="Games">
+  <div class="nav-button" id="games-btn" onclick="window.location.href='/pages/games'">
+    <img src="/img/games.png" alt="Games">
   </div>
-  <div class="nav-button" id="news-btn" onclick="window.location.href='/pages/betanews'">
-      <img src="/img/news.png" alt="News">
+  <div class="nav-button" id="news-btn" onclick="window.location.href='/pages/news'">
+    <img src="/img/news.png" alt="News">
   </div>
-  <div class="nav-button" id="help-btn" onclick="window.location.href='/pages/betahelp'">
-      <img src="/img/help.png" alt="Help">
+  <div class="nav-button" id="help-btn" onclick="window.location.href='/pages/help'">
+    <img src="/img/help.png" alt="Help">
   </div>
 </div>
 
