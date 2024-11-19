@@ -98,14 +98,14 @@
 	position: relative; 
 	font-size: 25px;
 	font-family: Poppins;
-	-webkit-text-stroke: 0.1px #cabbff;
+	color: #cabbff;
 }
 .bottom-info h1 {
 	top: 5px;
 	left: 20px;
 	position: relative; 
 	font-family: Poppins;
-	-webkit-text-stroke: 0.1px #cabbff;
+	color: #cabbff;
 }
 .gameIFrame {
 	margin: auto;

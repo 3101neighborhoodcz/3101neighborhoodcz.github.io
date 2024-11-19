@@ -1,4 +1,4 @@
-var elem = document.getElementById("aquagame");
+var elem = document.getElementById("stargame");
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -7,7 +7,4 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) {
     elem.msRequestFullscreen();
   }
-}
-function changeMethod(link) {
-  document.getElementById("aquagame").src = link
 }
