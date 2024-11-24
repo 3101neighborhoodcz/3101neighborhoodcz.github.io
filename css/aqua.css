@@ -79,10 +79,10 @@ color: rgba(0,0,0,0);
 text-align: center;
 }
  .newsdiv {
-  margin: auto;
+  
    height: 200px;
    border: 1px solid #00BEED;
-	border-radius: 40px;
+	
     width: 800px;
 	 background-color: #000000;
   }
