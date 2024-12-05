@@ -51,6 +51,8 @@
 
 html {
   height: 100%;
+
+
   background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/celestialbg.png) no-repeat center center fixed; 
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
@@ -407,6 +409,7 @@ transform: scale(1.2);
 }
 
 .news_article:hover {
+  cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.523); /* Enhanced shadow */
 }
@@ -431,4 +434,19 @@ transform: scale(1.2);
   width: 200px;
   border-right: 1px solid #fff;
   float: left;
+}
+
+.starnews {
+  font-size: 50px;
+  color: #a6a6a6d1;
+  -webkit-text-stroke: 0.1vw #fff;
+  font-family: Poppins;
+  text-align: center;
+}
+.starsentencenews {
+  color: #9f9f9fd1;
+  -webkit-text-stroke: 0.01vw #fff;
+  font-family: Poppins;
+  font-size: 25px;
+  text-align: center;
 }
